@@ -132,7 +132,7 @@ def visualizing_sales_with_sunburst_chart(df,height=800):
 
 
 
-# def visualizing_sales_world_map(df, height=600):
+def visualizing_sales_world_map(df, height=600):
     country_clients = df.groupby("client_country").size().reset_index(name="num_clients")
 
     # Create choropleth map (background colors)
